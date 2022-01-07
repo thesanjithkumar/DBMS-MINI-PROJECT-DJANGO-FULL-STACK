@@ -1,0 +1,24 @@
+{% extends 'base.html' %} {% load static %} {% load bootstrap5 %} 
+{% block content %}
+<h1 class="page_heading">List of Subjects</h1>
+ <table class="dept table text-center">
+  <thead>
+    <tr>
+      <th scope="col">Subject Code</th>
+      <th scope="col">Subject Name</th>
+      <th scope="col">Handling Department</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+ {% for subject in subject_list %}
+    <tr>
+      <td>{{subject.subject_code}}</td>
+      <td>{{subject.name}}</td>
+      <td>{{subject.dept}}</td>
+      <td><a href="{% url 'subject_single' pk=subject.subject_code %}">View more</a></td>
+    </tr>
+ {% endfor %} 
+  </tbody>
+</table>
+{% endblock %}

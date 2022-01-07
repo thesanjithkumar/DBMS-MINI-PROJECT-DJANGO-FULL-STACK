@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load bootstrap5 %}
+{% block content %}
+<h1 class="page_heading">Subject Details</h1>
+<div class="row text-center">
+<h4 class="name my-4 mt-5">
+Subject Name:
+<span class="me-auto">{{subject}}</span>
+</h4>
+<h4 class="my-4">Subject Code: <span>{{subject.subject_code}}</span></h4>
+<h4 class="my-4">Handling Department: <span>{{subject.dept}}</span></h4>
+</div>
+<div class="update_delete_dept">
+{% if user.is_authenticated %}
+<a class="btn btn-primary" id="update" href="{% url 'subject_update' pk=subject.subject_code %}">Update</a>
+<a class="btn btn-danger" id="delete" href="{% url 'subject_delete' pk=subject.subject_code %}">Delete</a>
+{% endif %}
+</div>
+{% endblock %}

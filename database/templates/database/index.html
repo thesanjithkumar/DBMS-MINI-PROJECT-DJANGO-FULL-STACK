@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load static %}
+{% load bootstrap5 %}
+{% block content %}
+<div class="row">
+  <div class="col-md-6">
+    <div class="student_home card h-75">
+      <div class="card-body">
+    <h4 class="card-title">Total no of students</h4>
+    <h6 class="card-subtitle mb-2">Including all department</h6>
+    <h1>{{student_count}}</h1>    
+    <a href="{% url 'students' %}" class="btn btn-primary">Show all</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="dept_home card h-75">
+      <div class="card-body">
+    <h4 class="card-title">No of Departments</h4>
+    <h6 class="card-subtitle mb-2">Including all departments</h6>
+    <h1>{{dept_count}}</h1>  
+    <a href="{% url 'depts' %}" class="btn btn-primary home_btn">Show all</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row row1">
+    <div class="col-md-6">
+    <div class="subject_home card h-75">
+      <div class="card-body">
+    <h4 class="card-title">No of Subjects</h4>
+    <h6 class="card-subtitle mb-2">Including all departments</h6>
+    <h1>{{subject_count}}</h1>  
+    <a href="{% url 'subjects' %}" class="btn btn-primary">Show all</a>
+      </div>
+    </div>
+  </div>  
+  <div class="col-md-6">
+    <div class="teacher_home card h-75">
+      <div class="card-body">
+    <h4 class="card-title">No of Teachers</h4>
+    <h6 class="card-subtitle mb-2">Including all departments</h6>
+    <h1>{{teacher_count}}</h1>
+    <a href="{% url 'teachers' %}" class="btn btn-primary">Show all</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}

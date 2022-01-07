@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load bootstrap5 %}
+{% block content %}
+<h1 class="page_heading">Student Details</h1>
+<div class="row text-center">
+<h4 class="name1 my-3">
+USN:
+<span class="me-auto">{{student.usn}}</span>
+</h4>
+<h4 class="name1 my-3">Name: <span>{{student.name}}</span></h4>
+<h4 class="name1 my-3">Phone Number: <span>{{student.phone}}</span></h4>
+<h4 class="name1 my-3">Email: <span>{{student.email}}</span></h4>
+<h4 class="name1 my-3">Address: <span>{{student.address}}</span></h4>
+<h4 class="name1 my-3">Department: <span>{{student.dept}}</span></h4>
+<h4 class="name1 my-3">Semester: <span>{{student.sem}}</span></h4>
+<h4 class="name1 my-3">Section: <span>{{student.section}}</span></h4>
+</div>
+<div class="update_delete_st">
+{% if user.is_authenticated %}
+<a class="btn btn-outline-primary" id="update" href="{% url 'student_update' pk=student.usn %}">Update</a>
+<a class="btn btn-outline-danger" id="delete" href="{% url 'student_delete' pk=student.usn %}">Delete</a>
+{% endif %}
+</div>
+{% endblock %}

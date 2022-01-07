@@ -1,0 +1,180 @@
+/* navbar andfooter */
+nav {
+  background-image: linear-gradient(to right, #283c86, #45a247);
+  /* height: 100px; */
+  vertical-align: middle;
+}
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #bc6bfa;
+}
+
+#brand-img {
+  width: 100%;
+  height: auto;
+}
+
+.navbar-brand {
+  margin: 10px;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  width: 80px;
+  height: 50px;
+}
+
+footer {
+  background-image: linear-gradient(to right, #283c86, #45a247);
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.footer-icons {
+  font-size: 1.2em;
+}
+
+#toggle {
+  color: white;
+}
+
+#login {
+  color: black;
+  background-color: white;
+  border: none;
+  width: 100px;
+}
+
+#logout {
+  color: black;
+  background-color: white;
+  border: none;
+  width: 100px;
+}
+/* navbar and footer */
+/* home page */
+
+.student_home {
+  background-image: linear-gradient(to bottom right, #8f71ff, #8bffff);
+}
+
+.dept_home {
+  background-image: linear-gradient(to bottom right, #00b7c2, #4ef037);
+}
+
+.subject_home {
+  background-image: linear-gradient(to bottom right, #c7004c, #ffaaaa);
+}
+
+.teacher_home {
+  background-image: linear-gradient(to bottom right, #3b6cb9, #00fff0);
+}
+
+div.card {
+  margin: 30px 0 35px 0;
+  color: white;
+  border: none;
+}
+
+.home_btn {
+  border: none;
+}
+
+.row1 {
+  margin-top: -30px;
+}
+/* home page */
+
+/* department */
+.dept {
+  background-color: #548cff;
+  text-decoration: none;
+}
+
+.dept a {
+  text-decoration: none;
+  color: white;
+}
+
+.update_delete_dept {
+  margin-bottom: 130px;
+}
+
+/* department */
+
+.name {
+  margin: 50px 0 0 0;
+}
+
+.table {
+  margin: 50px 0 100px 0;
+  color: white;
+}
+
+.page_heading {
+  margin: 30px 0 0 0;
+}
+
+thead {
+  background-color: #7900ff;
+}
+
+.update_delete_st {
+  margin: 50px 0 50px 0;
+}
+
+#update {
+  margin: 0 20px 0 0;
+}
+
+#delete {
+  margin: 0 0 0 0;
+}
+
+.forms {
+  margin: 50px 0 50px 0;
+}
+
+.input_form {
+  margin: 50px 0 50px 0;
+  padding: 20px;
+  border: 1px solid grey;
+  border-radius: 16px;
+}
+
+@media only screen and (max-width: 992px) {
+  .nav-link {
+    text-align: center;
+  }
+  nav {
+    font-size: 1em;
+  }
+  #login {
+    margin: auto;
+  }
+  #logout {
+    margin-top: 45px;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 1031px) {
+  .nav-link {
+    font-size: 0.89em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .row {
+    display: flex;
+  }
+  .row1 {
+    margin-top: auto;
+  }
+}

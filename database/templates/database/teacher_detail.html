@@ -1,0 +1,21 @@
+{% extends 'base.html' %} {% load static %} {% load bootstrap5 %} 
+{% block content %}
+<h1 class="page_heading">Teacher Details</h1>
+<div class="row text-center">
+<h4 class="name1 my-3">
+SSN:
+<span class="me-auto">{{teacher.ssn}}</span>
+</h4>
+<h4 class="name1 my-3">Name: <span>{{teacher.name}}</span></h4>
+<h4 class="name1 my-3">Phone Number: <span>{{teacher.phone}}</span></h4>
+<h4 class="name1 my-3">Email: <span>{{teacher.email}}</span></h4>
+<h4 class="name1 my-3">Address: <span>{{teacher.address}}</span></h4>
+<h4 class="name1 my-3">Department: <span>{{teacher.dept}}</span></h4>
+</div>
+<div class="update_delete_st">
+{% if user.is_authenticated %}
+<a class="btn btn-primary" id="update" href="{% url 'teacher_update' pk=teacher.ssn %}">Update</a>
+<a class="btn btn-danger" id="delete" href="{% url 'teacher_delete' pk=teacher.ssn %}">Delete</a>
+{% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'base.html' %} {% load static %} {% load bootstrap5 %} 
+{% block content %}
+ <h1 class="page_heading">List of Students</h1>
+ <table class="dept table text-center">
+  <thead>
+    <tr>
+      <th scope="col">USN</th>
+      <th scope="col">Name</th>
+      <th scope="col">Department</th>
+      <th scope="col">Sem</th>
+      <th scope="col">Section</th>
+      <th scope="col">Phone</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+ {% for student in student_list %}
+    <tr>
+      <td>{{student.usn}}</td>
+      <td>{{student.name}}</td>
+      <td>{{student.dept}}</td>
+      <td>{{student.sem}}</td>
+      <td>{{student.section}}</td>
+      <td>{{student.phone}}</td>
+      <td><a href="{% url 'student_single' pk=student.usn %}">View more</a></td>
+    </tr>
+ {% endfor %} 
+  </tbody>
+</table>
+{% endblock %}

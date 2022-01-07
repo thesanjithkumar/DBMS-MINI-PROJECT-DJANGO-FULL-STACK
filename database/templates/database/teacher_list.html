@@ -1,0 +1,32 @@
+{% extends 'base.html' %} {% load static %} {% load bootstrap5 %} 
+{% block content %}
+ <h1 class="page_heading">List of Teachers</h1>
+ <table class="dept table text-center">
+  <thead>
+    <tr>
+      <th scope="col">USN</th>
+      <th scope="col">Name</th>
+      <th scope="col">Department</th>
+      <th scope="col">Email</th>
+      <th scope="col">Phone</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+   {% for teacher in teacher_list %}
+    <tr>
+      <td>{{teacher.ssn}}</td>
+      <td>{{teacher.name}}</td>
+      <td>{{teacher.dept}}</td>
+      <td>{{teacher.email}}</td>
+      <td>{{teacher.phone}}</td>
+      <td><a href="{% url 'teacher_single' pk=teacher.ssn %}">View more</a></td>
+    </tr>
+   {% endfor %} 
+  </tbody>
+</table>
+ <div class="list">
+    
+    
+ </div>
+{% endblock %}

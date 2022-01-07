@@ -1,0 +1,22 @@
+{% extends 'base.html' %} {% load static %} {% load bootstrap5 %} 
+{% block content %}
+<h1 class="page_heading">List of Departments</h1>
+ <table class="dept table text-center">
+  <thead>
+    <tr>
+      <th scope="col">Dept_id</th>
+      <th scope="col">Dept_Name</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+      {% for dept in department_list %}
+    <tr>
+      <td>{{dept.dept_id}}</td>
+      <td>{{dept}}</td>
+      <td><a href="{% url 'dept_single' pk=dept.dept_id %}">View more</a></td>
+    </tr>
+ {% endfor %} 
+  </tbody>
+</table>
+{% endblock %}
