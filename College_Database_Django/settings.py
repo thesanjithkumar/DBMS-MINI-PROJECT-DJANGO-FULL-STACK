@@ -78,6 +78,9 @@ WSGI_APPLICATION = 'College_Database_Django.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+
+# DB settings for mysql change user and password for ur need
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -88,6 +91,15 @@ DATABASES = {
         'PORT': '3306',
     }
 }
+
+# db settings for sql lite 3 uncommet the below code and comment above block of code is u don't have mysql
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
 
 
 # Password validation
