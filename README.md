@@ -32,4 +32,4 @@ python manage.py runserver
 
 ## Go to http://localhost:8000 to see the output
 
-![alt text](https://github.com/sanjith-kumar-048/DBMS-MINI-PROJECT-DJANGO-FULL-STACK/static/img/Screenshot_20220108_142325.png)
+![alt text](https://github.com/sanjith-kumar-048/DBMS-MINI-PROJECT-DJANGO-FULL-STACK/blob/main/static/img/Screenshot_20220108_142325.png)
