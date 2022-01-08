@@ -42,7 +42,7 @@ class Student(models.Model):
                            null=False, primary_key=True, unique=True)
     name = models.CharField(max_length=50, blank=False, null=False)
     phone = models.CharField(
-        max_length=12, blank=False, null=False, unique=True)
+        max_length=10, blank=False, null=False, unique=True)
     email = models.EmailField(unique=True, max_length=254)
     address = models.TextField()
     dept = models.ForeignKey(Department, on_delete=models.CASCADE)
@@ -74,7 +74,7 @@ class Teacher(models.Model):
                            null=False, primary_key=True)
     name = models.CharField(blank=False, null=False, max_length=50)
     phone = models.CharField(
-        max_length=12, blank=False, null=False, unique=True)
+        max_length=10, blank=False, null=False, unique=True)
     address = models.TextField()
     email = models.EmailField(unique=True, blank=False, null=False)
     dept = models.ForeignKey(Department, on_delete=models.CASCADE)

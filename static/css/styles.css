@@ -3,6 +3,7 @@ nav {
   background-image: linear-gradient(to right, #283c86, #45a247);
   /* height: 100px; */
   vertical-align: middle;
+  font-family: "Rubik", sans-serif;
 }
 .nav-link {
   color: white;
@@ -27,9 +28,26 @@ nav {
   height: 50px;
 }
 
+.footer-logo {
+  margin: 10px;
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+
+#footer-logo {
+  margin: 0 5px 5px -5px;
+  width: 70px;
+  height: auto;
+}
+
 footer {
   background-image: linear-gradient(to right, #283c86, #45a247);
   color: white;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1em;
 }
 
 footer a {
@@ -80,6 +98,7 @@ div.card {
   margin: 30px 0 35px 0;
   color: white;
   border: none;
+  font-family: "Fira Sans", sans-serif;
 }
 
 .home_btn {
@@ -92,12 +111,13 @@ div.card {
 /* home page */
 
 /* department */
-.dept {
+tbody {
   background-color: #548cff;
   text-decoration: none;
+  font-family: "PT Sans", sans-serif;
 }
 
-.dept a {
+tbody a {
   text-decoration: none;
   color: white;
 }
@@ -119,10 +139,12 @@ div.card {
 
 .page_heading {
   margin: 30px 0 0 0;
+  font-family: "Merriweather", serif;
 }
 
 thead {
   background-color: #7900ff;
+  font-family: "Roboto Slab", serif;
 }
 
 .update_delete_st {
@@ -131,10 +153,12 @@ thead {
 
 #update {
   margin: 0 20px 0 0;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 #delete {
   margin: 0 0 0 0;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .forms {
@@ -146,6 +170,11 @@ thead {
   padding: 20px;
   border: 1px solid grey;
   border-radius: 16px;
+  font-family: "Mukta", sans-serif;
+}
+
+.detail {
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 @media only screen and (max-width: 992px) {
@@ -166,7 +195,7 @@ thead {
 
 @media only screen and (max-width: 1031px) {
   .nav-link {
-    font-size: 0.89em;
+    font-size: 0.84em;
   }
 }
 

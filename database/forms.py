@@ -21,7 +21,7 @@ class StudentForm(forms.ModelForm):
         fields = "__all__"
         widgets = {
             'usn': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Usn', 'required': 'required', }),
-            'name': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'name', 'required': 'required', }),
+            'name': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Name', 'required': 'required', }),
             'phone': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'xx-xxxx-xxxx', 'required': 'required', }),
             'email': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'example@example.com', 'required': 'required', }),
             'address': forms.Textarea(attrs={'class': 'form-control', 'placeholder': 'Address', 'required': 'required', }),
@@ -49,10 +49,10 @@ class TeacherForm(forms.ModelForm):
         model = models.Teacher
         fields = "__all__"
         widgets = {
-            'ssn': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Usn', 'required': 'required', }),
-            'name': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'name', 'required': 'required', }),
+            'ssn': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Ssn', 'required': 'required', }),
+            'name': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Name', 'required': 'required', }),
             'phone': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'xx-xxxx-xxxx', 'required': 'required', }),
-            'address': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'example@example.com', 'required': 'required', }),
-            'email': forms.Textarea(attrs={'class': 'form-control', 'placeholder': 'Address', 'required': 'required', }),
+            'email': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'example@example.com', 'required': 'required', }),
+            'address': forms.Textarea(attrs={'class': 'form-control', 'placeholder': 'Address', 'required': 'required', }),
             'dept': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Department', 'required': 'required', }),
         }

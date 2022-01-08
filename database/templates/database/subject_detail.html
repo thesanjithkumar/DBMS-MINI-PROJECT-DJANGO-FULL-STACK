@@ -13,8 +13,8 @@ Subject Name:
 </div>
 <div class="update_delete_dept">
 {% if user.is_authenticated %}
-<a class="btn btn-primary" id="update" href="{% url 'subject_update' pk=subject.subject_code %}">Update</a>
-<a class="btn btn-danger" id="delete" href="{% url 'subject_delete' pk=subject.subject_code %}">Delete</a>
+<a class="btn btn-outline-primary" id="update" href="{% url 'subject_update' pk=subject.subject_code %}">Update</a>
+<a class="btn btn-outline-danger" id="delete" href="{% url 'subject_delete' pk=subject.subject_code %}">Delete</a>
 {% endif %}
 </div>
 {% endblock %}

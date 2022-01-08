@@ -1,6 +1,8 @@
 /* navbar andfooter */
 nav {
   background-image: linear-gradient(to right, #283c86, #45a247);
+  /* height: 100px; */
+  vertical-align: middle;
 }
 .nav-link {
   color: white;
@@ -11,8 +13,27 @@ nav {
   color: #bc6bfa;
 }
 
+#brand-img {
+  width: 100%;
+  height: auto;
+}
+
 .navbar-brand {
-  width: 50px;
+  margin: 10px;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  width: 80px;
+  height: 50px;
+}
+
+.footer-logo {
+  width: 150px;
+  height: auto;
+}
+
+#footer-logo {
+  width: 100%;
   height: auto;
 }
 
@@ -156,5 +177,14 @@ thead {
 @media only screen and (max-width: 1031px) {
   .nav-link {
     font-size: 0.89em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .row {
+    display: flex;
+  }
+  .row1 {
+    margin-top: auto;
   }
 }

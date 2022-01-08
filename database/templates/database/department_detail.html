@@ -3,17 +3,17 @@
 {% load bootstrap5 %}
 {% block content %}
 <h1 class="page_heading">Department Details</h1>
-<div class="row text-center">
-<h4 class="name">
+<div class="row text-center detail">
+<h4 class="name my-5">
 Depratment Name:
 <span class="me-auto">{{department}}</span>
 </h4>
-<h4 class="my-5">Department ID: <span>{{department.dept_id}}</span></h4>
+<h4 class="mb-5">Department ID: <span>{{department.dept_id}}</span></h4>
 </div>
 <div class="update_delete_dept">
 {% if user.is_authenticated %}
-<a class="btn btn-primary" id="update" href="{% url 'dept_update' pk=department.dept_id %}">Update</a>
-<a class="btn btn-danger" id="delete" href="{% url 'dept_delete' pk=department.dept_id %}">Delete</a>
+<a class="btn btn-outline-primary" id="update" href="{% url 'dept_update' pk=department.dept_id %}">Update</a>
+<a class="btn btn-outline-danger" id="delete" href="{% url 'dept_delete' pk=department.dept_id %}">Delete</a>
 {% endif %}
 </div>
 {% endblock %}
