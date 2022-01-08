@@ -26,8 +26,7 @@ SECRET_KEY = 'django-insecure-fxbwfy(&4qcq%%v+8oc4&vd0wu_g6fp4(qvcsgy+a#f4#ouz2p
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'c27a-157-50-15-229.ngrok.io',
-    '127.0.0.1',
+
 ]
 
 
