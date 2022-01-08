@@ -1,5 +1,7 @@
 # DBMS-MINI-PROJECT-DJANGO-FULL-STACK
 
+## Check the settings.py file once for correct DB settings and change it accordingly
+
 ```
 git clone https://github.com/sanjith-kumar-048/DBMS-MINI-PROJECT-DJANGO-FULL-STACK.git
 ```
