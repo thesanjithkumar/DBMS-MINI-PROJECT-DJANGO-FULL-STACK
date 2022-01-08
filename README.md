@@ -18,7 +18,7 @@ virtualenv django_env
 ```
 pip install -r requirment.txt
 ```
-````
+```
 python manage.py makemigrations
 ```
 ```
@@ -28,4 +28,4 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-## Go to htpp://localhost:8000 to see the output
+## Go to http://localhost:8000 to see the output
