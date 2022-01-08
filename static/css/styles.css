@@ -123,6 +123,7 @@ tbody a {
 }
 
 .update_delete_dept {
+  margin-top: 50px;
   margin-bottom: 130px;
 }
 
@@ -156,6 +157,19 @@ thead {
   font-family: "IBM Plex Sans", sans-serif;
 }
 
+.delete_form {
+  text-align: center;
+  font-size: 3em;
+  margin: 100px 0 100px 0;
+  font-family: "Prompt", sans-serif;
+}
+
+.danger {
+  font-size: 0.89em;
+  margin: 40px;
+  letter-spacing: 2px;
+}
+
 #delete {
   margin: 0 0 0 0;
   font-family: "IBM Plex Sans", sans-serif;
@@ -163,6 +177,10 @@ thead {
 
 .forms {
   margin: 50px 0 50px 0;
+}
+
+.save {
+  font-family: "Mukta", sans-serif;
 }
 
 .input_form {
