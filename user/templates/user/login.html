@@ -11,6 +11,7 @@
     {% bootstrap_form form %}
     {% buttons %}
       <button type="submit" class="btn btn-primary">Login</button>
+      <a href="{% url 'user:signup' %}" class="btn btn-info" style="color:white;">Sign up</a>
     {% endbuttons %}
   </form>
 </div>
