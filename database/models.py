@@ -45,6 +45,7 @@ class Student(models.Model):
         max_length=10, blank=False, null=False, unique=True)
     email = models.EmailField(unique=True, max_length=254)
     address = models.TextField()
+    dob = models.CharField(max_length=10,  blank=False, null=False)
     dept = models.ForeignKey(Department, on_delete=models.CASCADE)
     sem = models.CharField(choices=sems, max_length=1)
     section = models.CharField(choices=sections, max_length=1)

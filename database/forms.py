@@ -23,6 +23,7 @@ class StudentForm(forms.ModelForm):
             'usn': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Usn', 'required': 'required', }),
             'name': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Name', 'required': 'required', }),
             'phone': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'xx-xxxx-xxxx', 'required': 'required', }),
+            'dob': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'xx-xx-xxxx', 'required': 'required', }),
             'email': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'example@example.com', 'required': 'required', }),
             'address': forms.Textarea(attrs={'class': 'form-control', 'placeholder': 'Address', 'required': 'required', }),
             'dept': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Department', 'required': 'required', }),

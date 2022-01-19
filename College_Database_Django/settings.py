@@ -92,7 +92,7 @@ DATABASES = {
     }
 }
 
-# db settings for sql lite 3 uncommet the below code and comment above block of code is u don't have mysql
+# db settings for sql lite 3 uncomment the below code and comment above block of code if u don't have mysql
 
 # DATABASES = {
 #     'default': {
@@ -146,5 +146,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'database/static')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-LOGIN_REDIRECT_URL = '/'
-LOGOUT_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'home'
